@@ -6,36 +6,44 @@
     <title>Professor Willian - Matemática</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif; /* Tipografia */
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #000000; /* Fundo preto */
+            color: #ecf0f1; /* Texto em cinza claro */
+            overflow: hidden; /* Evita barra de rolagem */
         }
 
         header {
             text-align: center;
             padding: 40px;
-            background-color: #000000; /* Preto puro */
-            color: #00cc66; /* Verde */
-            border-bottom: 5px solid #00cc66; /* Verde */
+            background-image: url('https://images.alphacoders.com/206/206871.jpg'); /* URL da imagem de fundo do cabeçalho */
+            background-size: cover; /* Cobre todo o cabeçalho */
+            background-position: center; /* Centraliza a imagem do cabeçalho */
+            color: #ecf0f1; /* Branco para o texto */
+            border-bottom: 5px solid #27ae60; /* Verde */
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 2.8em;
             margin: 0;
+            letter-spacing: 1px; /* Espaçamento das letras */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
         }
 
         section {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
         }
 
         section h2 {
             font-size: 2em;
-            color: #00cc66; /* Verde */
-            border-bottom: 2px solid #00cc66; /* Verde */
+            color: #27ae60; /* Verde */
+            border-bottom: 2px solid #27ae60; /* Verde */
             padding-bottom: 10px;
         }
 
@@ -44,8 +52,12 @@
             line-height: 1.6em;
         }
 
+        .ajuda {
+            color: #000000; /* Preto para a frase específica */
+        }
+
         a {
-            color: #00cc66; /* Verde */
+            color: #27ae60; /* Verde */
             text-decoration: none;
             font-weight: bold;
         }
@@ -60,23 +72,25 @@
         }
 
         ul li {
-            background-color: #f0f0f0;
-            padding: 10px;
+            background-color: #f9f9f9; /* Fundo claro */
+            padding: 15px;
             margin-bottom: 10px;
-            border-left: 5px solid #00cc66; /* Verde */
+            border-left: 5px solid #27ae60; /* Verde */
             transition: background-color 0.3s ease;
+            border-radius: 5px; /* Bordas arredondadas */
         }
 
         ul li:hover {
-            background-color: #e6e6e6;
+            background-color: #e6e6e6; /* Escurece ao passar o mouse */
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #000000; /* Preto puro */
-            color: #00cc66; /* Verde */
+            background-color: #2c3e50; /* Azul escuro */
+            color: #ecf0f1; /* Branco */
             margin-top: 40px;
+            border-top: 5px solid #27ae60; /* Verde */
         }
 
         footer p {
@@ -91,14 +105,14 @@
     </header>
 
     <section>
-    <h2>Recursos Úteis</h2>
-    <p>Abaixo você encontrará alguns materiais que podem ajudar no seu aprendizado de matemática:</p>
-    <ul>
-        <li><a href="#">Slides de Aula</a></li>
-        <li><a href="https:wi77ian.github.io/mat/exercicios.pdf">Listas de Exercícios</a></li>
-    </ul>
-</section>
-
+        <h2>Recursos Úteis</h2>
+        <p class="ajuda">Abaixo você encontrará alguns materiais que podem ajudar no seu aprendizado de matemática:</p>
+        <ul>
+            <li><span style="color: #27ae60;">Slides de Aula</span></li>
+            <li><span style="color: #27ae60;">Listas de Exercícios</span></li>
+        </ul>
+        <p><a href="https://wi77ian.github.io/mat/exercicios.pdf">Lista de Exercícios 1</a></p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Professor Willian - Todos os direitos reservados.</p>
