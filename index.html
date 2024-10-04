@@ -9,27 +9,38 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
+            background-image: url('https://raw.githubusercontent.com/wi77ian/nlw-10-copa/4f9db078fdecbc4696a08af963a058c2ac817679/assets/bg-green.svg'); /* Adicionando imagem de fundo */
+            background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
             color: #ecf0f1;
             display: flex;
             flex-direction: column;
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
             min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
         }
 
         header {
-            text-align: center;
-            padding: 40px;
-            background-image: url('https://images.alphacoders.com/206/206871.jpg');
-            background-size: cover;
-            color: #ecf0f1;
-            border-bottom: 5px solid #27ae60;
             width: 100%;
+            padding: 20px; /* Padding para o cabeçalho */
+            text-align: center; /* Centraliza o texto do cabeçalho */
+            position: fixed; /* Fixa o cabeçalho no topo da página */
+            top: 0; /* Fixa no topo */
+            left: 0; /* Fixa à esquerda */
+            z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
         }
 
-        header h1 {
+        h1 {
             font-size: 2.5em;
             margin: 0;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            margin-top: 100px; /* Adiciona uma margem superior para não sobrepor o cabeçalho */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+            justify-content: center; /* Centraliza o conteúdo verticalmente */
         }
 
         nav {
@@ -53,7 +64,7 @@
         }
 
         @media (max-width: 600px) {
-            header h1 {
+            h1 {
                 font-size: 2em; /* Reduz o tamanho do título em telas pequenas */
             }
 
@@ -70,6 +81,13 @@
         <h1>Professor Willian</h1>
     </header>
 
-    
+    <main>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </main>
+
 </body>
 </html>
