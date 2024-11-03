@@ -61,6 +61,7 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap; /* Permite que os botões se ajustem em várias linhas em telas pequenas */
         }
 
         nav a {
@@ -84,6 +85,33 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        /* Responsividade para telas pequenas (smartphones) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .subtitulo {
+                font-size: 1.2em;
+            }
+
+            nav a {
+                padding: 10px 20px;
+                font-size: 0.9em;
+                flex: 1 1 100%; /* Cada botão ocupa 100% da largura disponível em telas pequenas */
+                margin: 5px 0; /* Margem vertical para separar os botões */
+                text-align: center;
+            }
+
+            main {
+                padding: 20px 10px;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
