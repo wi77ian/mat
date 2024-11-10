@@ -32,7 +32,7 @@
             text-align: center;
         }
 
-        .botao-inicio {
+        .botao-voltar {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
@@ -43,16 +43,17 @@
             transition: background-color 0.3s;
         }
 
-        .botao-inicio:hover {
+        .botao-voltar:hover {
             background-color: #219150;
         }
 
         /* Estilo do acordeão */
         details {
             margin-bottom: 1em;
-            background-color: #2c3e50;
+            background-color: #ecf0f1;
             border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         summary {
@@ -60,14 +61,20 @@
             font-size: 1.1em;
             cursor: pointer;
             padding: 15px;
-            background-color: #27ae60;
+            background-color: #16a085; /* Cor verde suave */
             color: #fff;
             border: none;
             list-style: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        summary:hover {
+            background-color: #1abc9c; /* Tom mais claro de verde */
         }
 
         details[open] summary {
-            background-color: #219150;
+            background-color: #1abc9c; /* Cor do botão quando aberto */
         }
 
         .materiais-lista {
@@ -81,16 +88,17 @@
         .materiais-lista li {
             margin: 5px 0;
         }
-        
+
         .materiais-lista a {
             color: #34495e;
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .materiais-lista a:hover {
             color: #27ae60;
         }
+
     </style>
 </head>
 <body>
@@ -106,7 +114,6 @@
             <summary>7º Ano</summary>
             <ul class="materiais-lista">
                 <li><a href="https://docs.google.com/document/d/15_2NryUsuu2Qx-cw8IaufSz951HwnX3yzP0xDquL7OQ/edit?usp=sharing" target="_blank">Exercícios - Comprimento de Circunferência</a></li>
-                
             </ul>
         </details>
 
@@ -119,8 +126,8 @@
             </ul>
         </details>
 
-        <!-- Botão de Início para a página principal -->
-        <a href="index.html" class="botao-inicio">Início</a>
+        <!-- Botão de Voltar para a página principal -->
+        <a href="index.html" class="botao-voltar">Voltar</a>
     </main>
 
 </body>
